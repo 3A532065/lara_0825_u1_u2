@@ -17,7 +17,9 @@ Route::get('/', function () {
 
 
 
-    $posts = \App\Post::all();
+
+    $posts = \App\Post::find(1);
+
     dd($posts);
 
 
