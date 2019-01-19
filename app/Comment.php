@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Comment;
+use App\Post;
 
 class Comment extends Model
 {
