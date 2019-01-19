@@ -18,10 +18,10 @@ Route::get('/', function () {
 
 
     $post = \App\Post::find(1);
-    $post->update([
-        'title' => 'updated title',
-        'content' => 'updated content',
-    ]);
+    $post->title = 'saved title';
+    $post->content = 'saved content';
+    $post->save();
+
 
 
 });
