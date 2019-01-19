@@ -17,9 +17,11 @@ Route::get('/', function () {
 
 
 
+    $allPosts = \App\Post::all();
+    dd($allPosts);
 
-
-    \App\Post::destroy(2);
+    $featuredPosts = \App\Post::where('is_feature', 1)->get();
+    dd($featuredPosts);
 
 
 
